@@ -9,3 +9,9 @@ Prompts
 Claude - How do you make text inside a div to go to the right instead of down
 Claude - How to center text and blocks on screen
 Chatpt - How to seperate blocks 
+
+
+
+
+
+- update made it looks like windows 95 cause in game feel
