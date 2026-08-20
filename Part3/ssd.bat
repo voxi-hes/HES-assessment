@@ -19,6 +19,7 @@ if "%opt%"=="1" goto :ping
 if "%opt%"=="2" goto :testport
 if "%opt%"=="3" goto :ssh
 if "%opt%"=="4" exit /b
+if "%opt%"=="67" goto :funnynumber
 goto :menu
 
 :ping
@@ -64,6 +65,17 @@ if not defined PORT set "PORT=22"
 ssh -p %PORT% %USER%@%IP%
 
 echo.
+pause
+goto :menu
+
+:funnynumber
+cls
+echo bro...
+timeout /t 3 >nul
+for /l %%i in (1,1,67) do (
+    echo 67 (%%i)
+    timeout /t 1 >nul
+)
 pause
 goto :menu
 
