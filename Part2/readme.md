@@ -1,3 +1,7 @@
+Home page is index.html, the rest are pages used in navigation.
+
+
+
 Resources
 https://www.w3schools.com/html/default.asp
 
