@@ -2,6 +2,37 @@
 <html>
 <head>
 <style>
+html, body {
+background-color: #008080;
+min-height: 100vh;
+margin: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.windows {
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+.window {
+width: 600px;
+border: 2px solid #000;
+background: #c0c0c0;
+}
+.titlebar {
+background: #000080;
+color: #fff;
+height: 24px;
+display: flex;
+align-items: center;
+padding-left: 5px;
+font-weight: bold;
+}
+.windowcontent {
+padding: 15px;
+background: #c0c0c0;
+}
 .head-with-image {
 display: flex;
 align-items: center;
@@ -13,27 +44,6 @@ height: 60px;
 object-fit: cover;
 border-radius: 50%;
 }
-.systemdepartmenthead {
-background-color: #206694;
-color: rgb(0, 0, 0);
-border: 2px solid black;
-margin: 20px;
-padding: 20px;
-}
-.systemdepartment {
-background-color: #4c3ffd;
-color: rgb(0, 0, 0);
-border: 2px solid black;
-margin: 20px;
-padding: 20px;
-}
-.systemtrainees {
-background-color: #00e5ff;
-color: rgb(0, 0, 0);
-border: 2px solid black;
-margin: 20px;
-padding: 20px;
-}
 .trainees-container {
 display: flex;
 flex-direction: row;
@@ -41,70 +51,84 @@ align-items: center;
 gap: 20px;
 flex-wrap: wrap;
 }
-.button-back {
-margin: 20px;
-padding: 20px;
-}
-.button-link {
+.buttonlink {
 display: inline-block;
 padding: 8px 16px;
 background-color: white;
 color: black;
-text-decoration: none;
 border: 1px solid black;
 margin-top: 10px;
+text-decoration: none;
 }
-html, body {
-background-color: rgb(85, 74, 110);
-margin: 0;
-padding: 0;
-min-height: 100vh;
-}    
+.sitelink {
+color: #00ffa2;
+text-decoration: none;
+font-weight: bold;
+}
+.sitelink:hover {
+text-decoration: underline;
+}
 </style>
 </head>
 <body>
-<div class="systemdepartmenthead">
-<h2>System Department Head</h2>
+<div class="windows">
+<div class="window">
+<div class="titlebar">
+System Department Head
+</div>
+<div class="windowcontent">
 <div class="head-with-image">
-<img src="./images/inqsane.jpg" alt="Description" class="head-icon">
+<img src="./images/inqsane.jpg" alt="inqsane" class="head-icon">
 <h2>inqsane</h2>
 </div>
 <p>Head of systems department</p>
 </div>
-<div class="systemdepartment">
-<h2>System Department</h2>
+</div>
+<div class="window">
+<div class="titlebar">
+System Department
+</div>
+<div class="windowcontent">
 <div class="head-with-image">
-<img src="./images/bonnyyyy.jpg" alt="Description" class="head-icon">
+<img src="./images/bonnyyyy.jpg" alt="bonnyyyy" class="head-icon">
 <h2>bonnyyyy</h2>
 </div>
 <p>Part of systems department</p>
 </div>
-<div class="systemtrainees">
-<h2>System Trainees</h2>
+</div>
+<div class="window">
+<div class="titlebar">
+System Trainees
+</div>
+<div class="windowcontent">
 <div class="trainees-container">
 <div class="head-with-image">
-<img src="./images/voxi.jpg" alt="Description" class="head-icon">
+<img src="./images/voxi.jpg" alt="voxi" class="head-icon">
 <h2>voxi</h2>
 </div>
 <div class="head-with-image">
-<img src="./images/tungsten.jpg" alt="Description" class="head-icon">
+<img src="./images/tungsten.jpg" alt="Tungsten" class="head-icon">
 <h2>Tungsten</h2>
 </div>
 <div class="head-with-image">
-<img src="./images/kronos.jpg" alt="Description" class="head-icon">
+<img src="./images/kronos.jpg" alt="Kronos" class="head-icon">
 <h2>Kronos</h2>
 </div>
 <div class="head-with-image">
-<img src="./images/potatoman.jpg" alt="Description" class="head-icon">
+<img src="./images/potatoman.jpg" alt="Potatoman" class="head-icon">
 <h2>Potatoman</h2>
 </div>
 <div class="head-with-image">
-<img src="./images/mrbeee.jpg" alt="Description" class="head-icon">
+<img src="./images/mrbeee.jpg" alt="Mr.Beee" class="head-icon">
 <h2>Mr.Beee</h2>
 </div>
 </div>
 <p>Part of systems trainees</p>
 </div>
-<div class="button-back">
-<a href="index.html" class="button-link">>HOME</a>
 </div>
+<div class="button-back">
+<a href="index.html" class="buttonlink">>HOME</a>
+</div>
+</div>
+</body>
+</html>
