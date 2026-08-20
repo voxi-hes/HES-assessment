@@ -2,7 +2,7 @@
 <html>
 <head>
 <style>
-.button-link {
+.buttonlink {
 display: inline-block;
 padding: 8px 16px;
 background-color: white;
@@ -11,54 +11,49 @@ text-decoration: none;
 border: 1px solid black;
 margin-top: 10px;
 }
-.button-back {
-margin: 20px;
-padding: 20px;
-}
-.links {
-background-color: rgb(0, 132, 255);
-color: rgb(0, 0, 0);
-border: 2px solid black;
-margin: 20px;
-padding: 20px;
-}
 html, body {
-background-color: rgb(85, 74, 110);
-margin: 0;
-padding: 0;
+background-color: #008080;
 min-height: 100vh;
 display: flex;
-flex-direction: column;
 justify-content: center;
 align-items: center;
 }
-.hes, .body.text {
-background-color: rgb(0, 132, 255);
-color: rgb(0, 0, 0);
-border: 2px solid black;
-margin: 10px;
-padding: 20px;
-width: 90%;
+.window {
 max-width: 600px;
-text-align: center;
+border: 2px solid #000;
+background: #c0c0c0;
 }
-.body.text {
-background-color: rgb(16, 122, 172);
-color: rgb(255, 255, 255);
-}   
+.titlebar {
+background: #000080;
+color: #fff;
+height: 24px;
+display: flex;
+align-items: center;
+padding-left: 5px;
+font-weight: bold;
+}
+.windowcontent {
+ padding: 15px;
+ background: #c0c0c0;
+}
+.windows { 
+display: flex;
+gap: 20px;
+}
 </style>
 </head>
 <body>
 
-<div class="links">
-<h2>LINKS</h2>
+<div class="window">
+<div class="titlebar">LINKS</div>
+<div class="windowcontent">
 <ul>
-<li><a href="https://www.roblox.com/communities/659287522" class="button-link" target="_blank" rel="noopener noreferrer">Official Hydroelectric Roblox Community</a></li>
-<li><a href="https://www.roblox.com/games/18319297875" class="button-link" target="_blank" rel="noopener noreferrer">Official Hydroelectric Roblox Game</a></li>
-<li><a href="https://discord.gg/gKweTx4kUH" class="button-link" target="_blank" rel="noopener noreferrer">Official Hydroelectric Community Discord</a></li>
+<li><a href="https://www.roblox.com/communities/659287522" class="buttonlink" target="_blank" rel="noopener noreferrer">Official Hydroelectric Roblox Community</a></li>
+<li><a href="https://www.roblox.com/games/18319297875" class="buttonlink" target="_blank" rel="noopener noreferrer">Official Hydroelectric Roblox Game</a></li>
+<li><a href="https://discord.gg/gKweTx4kUH" class="buttonlink" target="_blank" rel="noopener noreferrer">Official Hydroelectric Community Discord</a></li>
 </ul>
-</div>
-
 <div class="button-back">
-<a href="index.html" class="button-link">>HOME</a>
+<a href="index.html" class="buttonlink">>HOME</a>
+</div>
+</div>
 </div>
