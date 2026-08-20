@@ -2,26 +2,11 @@
 <html>
 <head>
 <style>
-.hes {
-background-color: rgb(0, 132, 255);
-color: rgb(0, 0, 0);
-border: 2px solid black;
-margin: 20px;
-padding: 20px;
-}
-.bodytext {
-background-color: rgb(16, 122, 172);
-color: rgb(255, 255, 255);
-border: 2px solid black;
-margin: 20px;
-padding: 20px;
-}
 .buttonlink {
 display: inline-block;
 padding: 8px 16px;
 background-color: white;
 color: black;
-text-decoration: none;
 border: 1px solid black;
 margin-top: 10px;
 }
@@ -34,48 +19,57 @@ font-weight: bold;
 text-decoration: underline;
 }
 html, body {
-background-color: rgb(85, 74, 110);
-margin: 0;
-padding: 0;
+background-color: #008080;
 min-height: 100vh;
 display: flex;
-flex-direction: column;
 justify-content: center;
 align-items: center;
 }
-.hes, .bodytext {
-background-color: rgb(0, 132, 255);
-color: rgb(0, 0, 0);
-border: 2px solid black;
-margin: 10px;
-padding: 20px;
-width: 90%;
+.window {
 max-width: 600px;
-text-align: center;
+border: 2px solid #000;
+background: #c0c0c0;
 }
-.bodytext {
-background-color: rgb(16, 122, 172);
-color: rgb(255, 255, 255);
-}  
+.titlebar {
+background: #000080;
+color: #fff;
+height: 24px;
+display: flex;
+align-items: center;
+padding-left: 5px;
+font-weight: bold;
+}
+.windowcontent {
+ padding: 15px;
+ background: #c0c0c0;
+}
+.windows { 
+display: flex;
+gap: 20px;
+}
 </style>
 </head>
 <body>
-
-<div class="hes">
-<h2>HYDRO ELECTRIC SYSTEMS</h2>
+<div class="windows">
+<div class="window">
+<div class="titlebar">HYDRO ELECTRIC SYSTEMS</div>
+<div class="windowcontent">
 <p>A website for hydroelectric systems.</p>
 <p>Navigation:</p>
 <a href="status.html" class="buttonlink">API STATUS</a>
 <a href="links.html" class="buttonlink">LINKS</a>
 <a href="staff.html" class="buttonlink">STAFF</a>
+</div>
 </div> 
-
-<div class="bodytext">
+<div class="window">
+<div class="titlebar">ABOUT</div>
+<div class="windowcontent">
 <p>This is a mockup for my assessment with hydroelectric systems.</p>
 <p>This is not functional since it isn't linked to any backend services.</p>
 <p>To learn HTML/CSS i used online <a href="https://www.w3schools.com/html/default.asp" class="sitelink" target="_blank" rel="noopener noreferrer">w3schools.com</a></p>
 <p>Some code snippets have been taken from the w3schools.com tutorial.</p>
 </div> 
-
+</div>
+</div>
 </body>
 </html>
